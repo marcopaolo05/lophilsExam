@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.unread h2{
+    color: grey;
+    margin-left: 10px;
+}
+
+.header{
+    overflow: hidden;
+        white-space: nowrap;
+}
+
+.checkbox{
+    
+    margin: 0 auto;
+    float: left;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+
+.save button{
+    color: darkgreen;
+    background-color: rgb(197, 215, 197);
+    border-color: darkgreen ;
+    border-width: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+.manage button{
+    color: grey;
+    background-color: rgb(237, 237, 237);
+    border-color: grey ;
+    border-width: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    margin-right: 20px;
+    
+    float: left;
+}
+
+.delete button{
+    color: red;
+    background-color: rgb(219, 203, 203);
+    border-color: red ;
+    border-width: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    justify-content:left;
+    width: 99vw;
+    padding-top: 10px;
+    padding-left: 5px;
+    margin-left: 5px; 
+    margin-top: 15px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    border-style: groove;
+}
+
+
+.collapsible {
+    width: 99vw;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.collapsible input{
+    display: none;
+}
+
+.collapsible h2{
+   color: grey;
+}
+
+.collapsible label{
+    position: relative;
+    font-weight: 600;
+    background: #fff;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible label:after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked + label::after{
+    transform: rotate(90deg);
+
+}
+
+.collapsible-text{
+    max-height: 1px;
+    overflow:hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked ~ .collapsible-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background-color: #fff;
+    opacity: 1;
+    top: 0;
+}
+
+.collapsible-text p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+
+
+
+.collapsible1 {
+    width: 99vw;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.collapsible1 input{
+    display: none;
+}
+
+.collapsible1 h2{
+    color: grey;
+ }
+
+.collapsible1 label{
+    position: relative;
+    font-weight: 600;
+    background: #fff;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible1 label:after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+}
+
+.collapsible1 input:checked + label::after{
+    transform: rotate(90deg);
+
+}
+
+.collapsible1-text1{
+    max-height: 1px;
+    overflow:hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible1 input:checked ~ .collapsible1-text1{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background-color: #fff;
+    opacity: 1;
+    top: 0;
+}
+
+.collapsible1-text1 p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+
+
+
+
+.collapsible2 {
+    width: 99vw;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.collapsible2 input{
+    display: none;
+}
+
+.collapsible2 h2{
+    color: grey;
+ }
+
+.collapsible2 label{
+    position: relative;
+    font-weight: 600;
+    background: #fff;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible2 label:after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+}
+
+.collapsible2 input:checked + label::after{
+    transform: rotate(90deg);
+
+}
+
+.collapsible2-text2{
+    max-height: 1px;
+    overflow:hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible2 input:checked ~ .collapsible2-text2{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background-color: #fff;
+    opacity: 1;
+    top: 0;
+}
+
+.collapsible2-text2 p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
